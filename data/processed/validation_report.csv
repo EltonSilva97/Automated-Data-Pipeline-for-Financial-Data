@@ -1,0 +1,6 @@
+check,result,status
+duplicates,0,PASS
+invalid_ohlc,5,WARN
+negative_prices,0,PASS
+negative_volumes,0,PASS
+missing_values,4073,WARN

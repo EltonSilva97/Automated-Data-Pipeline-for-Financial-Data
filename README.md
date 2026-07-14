@@ -29,12 +29,12 @@
 ## Commands:
 To run the data engineering pipeline:
 ```bash
-python root\src\pipeline.py
+python src\pipeline.py
 ```
 
 To create the database:
 ```bash
-python root\sql\stocks_db.py
+python sql\stocks_db.py
 ```
 
 ## File Structure

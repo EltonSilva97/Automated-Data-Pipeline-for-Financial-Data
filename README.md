@@ -11,7 +11,6 @@
 - NumPy
 - SQLite
 - SQL
-- Power BI
 
 ## Skills Demonstrated
 
@@ -22,7 +21,6 @@
 - SQL Analytics
 - Relational Databases
 - Data Visualization
-- Dashboard Development
 - Business Insight Generation
 
 
@@ -40,7 +38,6 @@ python sql\stocks_db.py
 ## File Structure
 ```text
 - root:
-    - dashboard:
     - data:
         - processed:
             - stock_prices_clean.csv
@@ -56,17 +53,14 @@ python sql\stocks_db.py
         - queries.sql
     - src:
         - __init__.py
-        - .gitignore
         - data_cleaning.py
         - extract.py
         - feature_engineering.py
         - pipeline.py
         - validate.py
-    - visuals:
-        - dashboard_screenshots:
-        - sql_outputs
     - __init__.py
     - README.md
     - requirements.txt
-- lisbon_housing.db
+    - .gitignore
+- stocks.db
 ```

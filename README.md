@@ -51,6 +51,7 @@ python sql\stocks_db.py
     - sql:
         - stocks_db.py
         - queries.sql
+        - stocks.db
     - src:
         - __init__.py
         - data_cleaning.py
@@ -62,5 +63,4 @@ python sql\stocks_db.py
     - README.md
     - requirements.txt
     - .gitignore
-- stocks.db
 ```

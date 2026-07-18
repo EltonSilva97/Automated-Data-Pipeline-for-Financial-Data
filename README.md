@@ -5,9 +5,9 @@
 
 ## Structure
 ```bash
-    extract
+extract
     ↓
-    clean
+clean
     ↓
 feature engineer
     ↓
@@ -15,9 +15,9 @@ validate
     ↓
 processed dataset
     ↓
-    SQLite
+SQLite
     ↓
-    SQL
+SQL
     ↓
 analysis notebook
 ```

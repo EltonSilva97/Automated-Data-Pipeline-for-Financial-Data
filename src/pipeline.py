@@ -26,10 +26,6 @@ def save_data(df: pd.DataFrame, output_path: Path) -> None:
     Parameters
     ----------
     path : str or Path
-
-    Returns
-    -------
-    Path after all transformations
     """
     
     csv_path = output_path / "stock_prices_clean.csv"
@@ -47,9 +43,6 @@ def run_pipeline(input_path, output_path) -> None:
     input path : str or Path
     output path : str or Path
 
-    Returns
-    -------
-    Output Path after cleaning, feature engineering and validation
     """
     
     df = load_data(input_path)

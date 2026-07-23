@@ -10,7 +10,7 @@ import pandas as pd
 def feature_engineering(df: pd.DataFrame) -> pd.DataFrame:
     df = df.copy()
     
-    # Daily return from open to close
+    # Daily intraday return from open to close
     df["daily_return"] = (df["close"] - df["open"]) / df["open"]
     
     df["ma_30"] = (

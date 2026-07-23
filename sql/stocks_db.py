@@ -1,18 +1,24 @@
+from pathlib import Path
 import pandas as pd
 import sqlite3
 
+ROOT_DIR = Path(__file__).resolve().parent.parent
+
+csv_path = ROOT_DIR / "data" / "processed" / "stock_prices_clean.csv"
+db_path = ROOT_DIR / "sql" / "stocks.db"
+
 # Load cleaned CSV
-df = pd.read_csv("root/data/processed/stock_prices_clean.csv", sep=",")
+df = pd.read_csv(csv_path)
 
 # Create database
-conn = sqlite3.connect("financial_market.db")
+connection = sqlite3.connect(db_path)
 
 # DF to table
 df.to_sql(
     "stock_prices",
-    conn,
+    connection,
     if_exists="replace",
     index=False
 )
 
-conn.close()
+connection.close()

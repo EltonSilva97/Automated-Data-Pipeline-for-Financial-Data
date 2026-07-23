@@ -1,5 +1,5 @@
+-- Active: 1784670873714@@127.0.0.1@3306
 -- Which assets had the highest average daily trading volume?
-
 SELECT 
     ticker,
     AVG(volume) AS avg_volume

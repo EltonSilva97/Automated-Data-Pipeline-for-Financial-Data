@@ -2,28 +2,58 @@
 **Author:** Elton Silva
 
 ## Overview
+This project demonstrates the design and implementation of an end-to-end data engineering pipeline for financial market data. It automates data extraction, cleaning, feature engineering, validation, storage, and exploratory analysis using Python, SQLite, and SQL.
+
+## Objectives
+- Build an automated ETL pipeline
+- Apply financial feature engineering
+- Validate data quality
+- Store processed data efficiently
+- Perform SQL-based analysis
+- Produce exploratory visualizations
+
+## Highlights
+- Automated ETL workflow
+- Modular Python architecture
+- Data validation framework
+- Financial feature engineering
+- SQLite integration
+- SQL analytics
+- Automated testing with pytest
+- GitHub Actions CI
+
+## Continuous Integration
+GitHub Actions automatically runs the project's test suite whenever new commits are pushed.
 
 ## Structure
 ```bash
-extract
-    ↓
-clean
-    ↓
-feature engineer
-    ↓
-validate
-    ↓
-processed dataset
-    ↓
-SQLite
-    ↓
-SQL
-    ↓
-analysis notebook
+Yahoo Finance
+      │
+      ▼
+Data Extraction
+      │
+      ▼
+Data Cleaning
+      │
+      ▼
+Feature Engineering
+      │
+      ▼
+Data Validation
+      │
+      ▼
+CSV / Parquet
+      │
+      ├──► SQLite Database
+      │          │
+      │          ▼
+      │      SQL Analysis
+      │
+      ▼
+Jupyter Notebook
 ```
 
 ## Technology Stack
-
 - Python
 - Pandas
 - NumPy
@@ -31,7 +61,6 @@ analysis notebook
 - SQL
 
 ## Skills Demonstrated
-
 - Data Cleaning
 - Data Validation
 - Feature Engineering
@@ -74,6 +103,11 @@ To create the database:
 python sql\stocks_db.py
 ```
 
+Run all tests:
+```bash
+python -m pytest
+```
+
 ## File Structure
 ```text
 - root:
@@ -98,7 +132,6 @@ python sql\stocks_db.py
         - feature_engineering.py
         - pipeline.py
         - validate.py
-    - __init__.py
     - README.md
     - requirements.txt
     - .gitignore

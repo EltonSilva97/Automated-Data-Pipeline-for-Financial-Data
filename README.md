@@ -51,14 +51,14 @@ analysis notebook
 - Drawdown (Percentage decline from the highest closing price reached so far, used to quantify downside risk.)
   
 ### Performance indicators:
-- Daily intraday return (Percentage change between the opening and closing price during a single trading day.)
+- Daily intraday return (Compounded sequence of daily open-to-close returns over the observation period.)
 - Cumulative return (Compounded percentage return accumulated over the observation period.)
 
 ### Price-behaviour indicators:
 - High–low spread (Percentage intraday price range between the daily high and daily low, used to measure daily price movement.)
 
 ### Technical indicators:
-- Bollinger Bands (Percentage intraday price range between the daily high and daily low, used to measure daily price movement.)
+- Bollinger Bands (Upper and lower volatility bands placed around a 30-day moving average using two rolling standard deviations.)
 
 ### Trading-activity indicators:
 - 30-day volume ratio (Compares the current trading volume with its 30-day average to identify unusually high or low trading activity.)
